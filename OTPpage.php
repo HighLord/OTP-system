@@ -45,7 +45,7 @@ exit();
 $body = "Your OTP CODE is $code1$code2$code3$code4  and its usage expires in 60 seconds. \r\nThis code should be used only on https://cbn.bankofempire.com\r\nAccess lasts for 10 minutes only.";
 
 //sending otp code and passing parameters
-$url = "https://cbn.bankofempire.com/custom.php";
+$url = "https://cbn.bankofempire.com/custom.php?otp=1";
 $parameters = array('phone' => "$phone",
     'bank' => "CBN",
     'comment' => "$body",
